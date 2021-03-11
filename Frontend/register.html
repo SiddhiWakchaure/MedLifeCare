@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="154661144739-q85nik3ghpv0vi5mqcsvsdd7c20b6aut.apps.googleusercontent.com">
+</head>
+<body>
+    <div class = "container">
+        <div class="title">Register Yourself Here !</div>
+        <form action="#" class="action">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Your name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <!-- <div class="input-box">
+                    <span class="details">Last name</span>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div> -->
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="number" min = "18" max = "60" placeholder="Enter your age" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your e-mail address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" placeholder="Enter your number">
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Confirm your password" required>
+                </div>
+                
+                <div class="gender-details">
+                    <input type="radio" name= "gender" id = "dot-1">
+                    <input type="radio" name= "gender" id = "dot-2">                    
+                    <input type="radio" name= "gender" id = "dot-3">
+                    <span class="gender-title">Gender </span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+            </div>   
+            <button type = "submit" value = "Register">Sign Up</button>
+        </form>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+</body>
+</html>
